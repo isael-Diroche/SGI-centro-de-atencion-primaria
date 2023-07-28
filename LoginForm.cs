@@ -78,5 +78,10 @@ namespace GestionMedicamentos
             // Cerrar la aplicación si se hace clic en "Cancelar"
             Application.Exit();
         }
+
+        private void loginForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

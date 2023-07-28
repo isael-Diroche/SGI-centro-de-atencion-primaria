@@ -86,7 +86,7 @@
             this.tituloLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.tituloLogin.MinimumSize = new System.Drawing.Size(292, 0);
             this.tituloLogin.Name = "tituloLogin";
-            this.tituloLogin.Size = new System.Drawing.Size(292, 24);
+            this.tituloLogin.Size = new System.Drawing.Size(292, 30);
             this.tituloLogin.TabIndex = 2;
             this.tituloLogin.Text = "Iniciar Sesión";
             this.tituloLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -102,7 +102,7 @@
             this.txtUsername.Location = new System.Drawing.Point(2, 18);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(0);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(185, 22);
+            this.txtUsername.Size = new System.Drawing.Size(185, 26);
             this.txtUsername.TabIndex = 3;
             // 
             // txtPassword
@@ -111,7 +111,7 @@
             this.txtPassword.Margin = new System.Windows.Forms.Padding(14, 7, 14, 7);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(185, 22);
+            this.txtPassword.Size = new System.Drawing.Size(185, 26);
             this.txtPassword.TabIndex = 4;
             // 
             // panel1
@@ -123,7 +123,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(294, 425);
+            this.panel1.Size = new System.Drawing.Size(294, 417);
             this.panel1.TabIndex = 5;
             // 
             // panel3
@@ -143,16 +143,16 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(298, 0);
+            this.panel2.Location = new System.Drawing.Point(296, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(439, 425);
+            this.panel2.Size = new System.Drawing.Size(439, 417);
             this.panel2.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.Image = global::GestionMedicamentos.Properties.Resources.medical_imagen;
-            this.label4.Location = new System.Drawing.Point(57, 54);
+            this.label4.Location = new System.Drawing.Point(57, 50);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(325, 170);
             this.label4.TabIndex = 1;
@@ -192,7 +192,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(325, 58);
             this.label2.TabIndex = 1;
-            this.label2.Text = "COLARES DE CAÑA";
+            this.label2.Text = "CORALES DE CAÑA";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -211,11 +211,11 @@
             // loginForm
             // 
             this.AcceptButton = this.btnAceptar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.CancelButton = this.btnCancelar;
-            this.ClientSize = new System.Drawing.Size(737, 425);
+            this.ClientSize = new System.Drawing.Size(735, 417);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Inter", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -226,6 +226,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Inicio de Sesión";
+            this.Load += new System.EventHandler(this.loginForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
