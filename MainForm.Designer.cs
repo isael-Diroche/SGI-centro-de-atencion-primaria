@@ -29,16 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.agregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medicamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medicamentoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +48,10 @@
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.dataGridViewMedicamentos = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -66,7 +69,7 @@
             this.verToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1067, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -101,7 +104,7 @@
             // registrosToolStripMenuItem
             // 
             this.registrosToolStripMenuItem.Name = "registrosToolStripMenuItem";
-            this.registrosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.registrosToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             this.registrosToolStripMenuItem.Text = "Registros";
             // 
             // medicamentoToolStripMenuItem
@@ -113,15 +116,6 @@
             this.medicamentoToolStripMenuItem.Name = "medicamentoToolStripMenuItem";
             this.medicamentoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.medicamentoToolStripMenuItem.Text = "Nuevo";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(79, 89);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Pantalla Principal";
             // 
             // contextMenuStrip1
             // 
@@ -139,19 +133,19 @@
             // medicamentoToolStripMenuItem1
             // 
             this.medicamentoToolStripMenuItem1.Name = "medicamentoToolStripMenuItem1";
-            this.medicamentoToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.medicamentoToolStripMenuItem1.Size = new System.Drawing.Size(184, 26);
             this.medicamentoToolStripMenuItem1.Text = "Medicamento";
             // 
             // pacienteToolStripMenuItem
             // 
             this.pacienteToolStripMenuItem.Name = "pacienteToolStripMenuItem";
-            this.pacienteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pacienteToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.pacienteToolStripMenuItem.Text = "Paciente";
             // 
             // facturaToolStripMenuItem
             // 
             this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
-            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.facturaToolStripMenuItem.Text = "Factura";
             // 
             // toolStripSeparator1
@@ -174,21 +168,74 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnSalir);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 30);
+            this.panel1.Location = new System.Drawing.Point(0, 28);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(264, 524);
-            this.panel1.TabIndex = 3;
+            this.panel1.Padding = new System.Windows.Forms.Padding(18, 0, 18, 50);
+            this.panel1.Size = new System.Drawing.Size(100, 526);
+            this.panel1.TabIndex = 30;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.dataGridViewMedicamentos);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(264, 30);
+            this.panel2.Location = new System.Drawing.Point(500, 128);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(803, 524);
+            this.panel2.Size = new System.Drawing.Size(200, 100);
             this.panel2.TabIndex = 4;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSalir.Image = global::GestionMedicamentos.Properties.Resources.exit;
+            this.btnSalir.Location = new System.Drawing.Point(18, 431);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(0, 23, 0, 23);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(64, 64);
+            this.btnSalir.TabIndex = 5;
+            this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button3.Image = global::GestionMedicamentos.Properties.Resources.factura;
+            this.button3.Location = new System.Drawing.Point(18, 197);
+            this.button3.Margin = new System.Windows.Forms.Padding(0, 23, 0, 23);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(64, 64);
+            this.button3.TabIndex = 4;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.Image = global::GestionMedicamentos.Properties.Resources.home;
+            this.button2.Location = new System.Drawing.Point(18, 23);
+            this.button2.Margin = new System.Windows.Forms.Padding(0, 23, 0, 23);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(64, 64);
+            this.button2.TabIndex = 3;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Image = global::GestionMedicamentos.Properties.Resources.medkit;
+            this.button1.Location = new System.Drawing.Point(18, 110);
+            this.button1.Margin = new System.Windows.Forms.Padding(0, 23, 0, 23);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(64, 64);
+            this.button1.TabIndex = 2;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // dataGridViewMedicamentos
             // 
@@ -199,37 +246,36 @@
             this.dataGridViewMedicamentos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewMedicamentos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridViewMedicamentos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(38)))), ((int)(((byte)(215)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Inter SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewMedicamentos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(38)))), ((int)(((byte)(215)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Inter SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewMedicamentos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewMedicamentos.ColumnHeadersHeight = 30;
-            this.dataGridViewMedicamentos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewMedicamentos.EnableHeadersVisualStyles = false;
-            this.dataGridViewMedicamentos.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewMedicamentos.Location = new System.Drawing.Point(664, 0);
             this.dataGridViewMedicamentos.Margin = new System.Windows.Forms.Padding(0);
             this.dataGridViewMedicamentos.Name = "dataGridViewMedicamentos";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Inter", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewMedicamentos.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Inter", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewMedicamentos.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewMedicamentos.RowHeadersVisible = false;
             this.dataGridViewMedicamentos.RowHeadersWidth = 51;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(6, 5, 0, 5);
-            this.dataGridViewMedicamentos.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(6, 5, 0, 5);
+            this.dataGridViewMedicamentos.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewMedicamentos.RowTemplate.Height = 24;
-            this.dataGridViewMedicamentos.Size = new System.Drawing.Size(803, 524);
+            this.dataGridViewMedicamentos.Size = new System.Drawing.Size(303, 526);
             this.dataGridViewMedicamentos.TabIndex = 0;
             // 
             // MainForm
@@ -251,7 +297,6 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMedicamentos)).EndInit();
             this.ResumeLayout(false);
@@ -267,7 +312,6 @@
         private System.Windows.Forms.ToolStripMenuItem facturasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrosToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem facturaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem medicamentoToolStripMenuItem1;
@@ -278,6 +322,10 @@
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.DataGridView dataGridViewMedicamentos;
     }
 }

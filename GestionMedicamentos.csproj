@@ -113,7 +113,18 @@
   <ItemGroup>
     <None Include="assets\img\medical imagen.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="assets\img\menu icons\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\img\menu icons\factura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\img\menu icons\medkit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\img\menu icons\exit.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

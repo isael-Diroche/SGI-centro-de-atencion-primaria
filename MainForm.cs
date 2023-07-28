@@ -79,5 +79,25 @@ namespace GestionMedicamentos
                 }
             }
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            // Mostrar un cuadro de diálogo para confirmar el cierre de sesión
+            DialogResult result = MessageBox.Show("¿Está seguro de querer cerrar sesión?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Si el usuario confirma cerrar sesión, regresa a LoginForm
+                this.Hide();
+
+                loginForm loginForm = new loginForm();
+                loginForm.ShowDialog();
+
+                if (loginForm.DialogResult == DialogResult.OK)
+                {
+                    Application.Exit();
+                }
+            }
+        }
     }
 }
