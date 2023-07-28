@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestionMedicamentos.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,9 @@ namespace GestionMedicamentos
         [STAThread]
         static void Main()
         {
+            // Crear la base de datos al inicio de la aplicación
+            SQLiteHelper.CreateDatabase();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new loginForm());
